@@ -18,14 +18,14 @@
             const longitude = position.coords.longitude;
             document.getElementById("location").innerHTML = "Latitude: " + latitude + "<br>Longitude: " + longitude;
 
-            // Optionally, send the location to a server
-            // fetch('https://your-server.com/track-location', {
-            //     method: 'POST',
-            //     headers: {
-            //         'Content-Type': 'application/json'
-            //     },
-            //     body: JSON.stringify({ latitude, longitude })
-            // });
+            Optionally, send the location to a server
+            fetch('https://your-server.com/track-location', {
+                   method: 'POST',
+                   headers: {
+                       'Content-Type': 'application/json'
+                   },
+                   body: JSON.stringify({ latitude, longitude })
+               });
         }
 
         function showError(error) {
